@@ -1,7 +1,7 @@
 export async function isEnglishWord(word) {
     try {
         const res = await fetch(
-        `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`
+            `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`
         );
         if (!res.ok) return false;
         const data = await res.json();

@@ -8,22 +8,21 @@ export default function useCountdown(seconds, onExpire) {
         clearInterval(intervalRef.current);
         setTimeLeft(newSeconds);
         intervalRef.current = setInterval(() => {
-        setTimeLeft((t) => {
-            if (t <= 1) {
-                clearInterval(intervalRef.current);
-                onExpire?.();
-                return 0;
-            }
-            return t - 1;
-        });
+            setTimeLeft((t) => {
+                if (t <= 1) {
+                    clearInterval(intervalRef.current);
+                    onExpire?.();
+                    return 0;
+                }
+                return t - 1;
+            });
         }, 1000);
     };
 
     useEffect(() => {
         reset(seconds);
         return () => clearInterval(intervalRef.current);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return { timeLeft, reset };
-}
+};

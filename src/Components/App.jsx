@@ -16,7 +16,7 @@ function App() {
     const [status, setStatus] = useState("");
 
     const onExpire = useCallback(() => {
-        // penalize current player for timeout
+        // penalty current player for timeout
         setPlayers((ps) =>
             ps.map((p, i) => (i === current ? { ...p, score: p.score - 1 } : p))
         );
