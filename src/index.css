@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.scoreboard .active { 
+    border: 2px solid var(--color-indigo-500); 
+    border-radius: 24px;
+}
