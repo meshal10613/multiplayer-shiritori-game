@@ -1,6 +1,6 @@
 # 🎮 Multiplayer Shiritori Game
 
-[Live Demo](https://your-demo-link.netlify.app)
+[Live Demo](https://mulitplay-shiritori-game.netlify.app/)
 
 ---
 
@@ -11,7 +11,7 @@
 - 🏆 **Score tracking** – shows live scores of both players.
 - 📝 **Word history display** – see all previous words, prevents repeats.
 - ⚡ **Fast & lightweight** – built with React + Vite.
-- ☁️ **Deployed** to Netlify/Vercel for easy access.
+- ☁️ **Deployed** to Netlify for easy access.
 
 ---
 
@@ -19,7 +19,7 @@
 - **React** (Vite)
 - **Tailwind CSS & Daisy UI** (for simple styling)
 - **DictionaryAPI** for word validation
-- **Netlify/Vercel** for hosting
+- **Netlify** for hosting
 
 ---
 
@@ -28,7 +28,7 @@ Clone the repository and run locally:
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/shiritori-game.git
+git clone https://github.com/meshal10613/multiplayer-shiritori-game
 ```
 
 ### Navigate into folder
